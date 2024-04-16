@@ -1,0 +1,69 @@
+#r {
+    display: flex;
+}
+#cl1 {
+    background-color: red;    
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+#cl2 {
+    background-color:  black;
+    width: 50%;
+    text-align: center;
+    color:white
+}
+
+#in {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+}
+#bt {
+    margin-left: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: large;
+}
+.a1 {   
+    width: 25%;
+    height: 100px;
+          
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow
+}
+
+.h {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+#lefted {
+    padding-left: 500px;
+}
+
+#music {
+    display: flex;
+    background-color: gainsboro;
+}
+#genre{
+    width: 251px;
+    font-size: 20px;
+    text-align: center;
+}
+#r6 {
+    border-style: solid;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
+
