@@ -1,17 +1,24 @@
 const menu1 = document.getElementById("cl1");
 const menu2 = document.getElementById("cl2");
-let cl1_active = false;
+let cl1_active = true;
 let cl2_active = false;
 
+let pop = document.querySelectorAll(".pop_m");
+let rock = document.querySelectorAll(".rock_m");
+let rap = document.querySelectorAll(".rap_m");
+let kpop = document.querySelectorAll(".kpop_m");
+rock.forEach(item => {
+    item.style.display = "none";
+})
+rap.forEach(item => {
+    item.style.display = "none";
+})
+kpop.forEach(item => {
+    item.style.display = "none";
+})
+
 menu1.addEventListener("click",(event) => {
-    if(!cl1_active && !cl2_active) {
-        cl1_active = true;
-        cl2_active = false;
-        menu1.style.width = `${85}%`;
-        menu2.style.width = `${15}%`;
-        menu2.style.backgroundColor = "black";
-        menu1.style.backgroundColor = "red";
-    }
+    
     if(cl2_active) {
         cl1_active = true;
         cl2_active = false;
@@ -22,14 +29,6 @@ menu1.addEventListener("click",(event) => {
     }
 })
 menu2.addEventListener("click",(event) => {
-    if(!cl1_active && !cl2_active) {
-        cl2_active = true;
-        cl1_active = false;
-        menu1.style.width = `${15}%`;
-        menu2.style.width = `${85}%`;
-        menu1.style.backgroundColor = "black";
-        menu2.style.backgroundColor = "red";
-    }
     if(cl1_active) {
         cl2_active = true;
         cl1_active = false;
@@ -47,7 +46,7 @@ const music_4 = document.querySelectorAll(".m4");
 const music_5 = document.querySelectorAll(".m5");
 const music_6 = document.querySelectorAll(".m6");
 
-let m1_active = false;
+let m1_active = true;
 let m2_active = false;
 let m3_active = false;
 let m4_active = false;
@@ -79,6 +78,18 @@ music_1.forEach(item => {
             m1_active = true;
             resetGenreColors();
             item.style.backgroundColor = "gray";
+            pop.forEach(item => {
+                item.style.display = "flex";
+            })
+            rock.forEach(item => {
+                item.style.display = "none";
+            })
+            rap.forEach(item => {
+                item.style.display = "none";
+            })
+            kpop.forEach(item => {
+                item.style.display = "none";
+            })
         }
     });
 });
@@ -92,6 +103,18 @@ music_2.forEach(item => {
             m2_active = true;
             resetGenreColors();
             item.style.backgroundColor = "gray";
+            pop.forEach(item => {
+                item.style.display = "none";
+            })
+            rock.forEach(item => {
+                item.style.display = "flex";
+            })
+            rap.forEach(item => {
+                item.style.display = "none";
+            })
+            kpop.forEach(item => {
+                item.style.display = "none";
+            })
         }
     });
 });
@@ -105,6 +128,18 @@ music_3.forEach(item => {
             m3_active = true;
             resetGenreColors();
             item.style.backgroundColor = "gray";
+            pop.forEach(item => {
+                item.style.display = "none";
+            })
+            rock.forEach(item => {
+                item.style.display = "none";
+            })
+            rap.forEach(item => {
+                item.style.display = "flex";
+            })
+            kpop.forEach(item => {
+                item.style.display = "none";
+            })
         }
     });
 });
@@ -115,6 +150,18 @@ music_4.forEach(item => {
             m4_active = true;
             resetGenreColors();
             item.style.backgroundColor = "gray";
+            pop.forEach(item => {
+                item.style.display = "none";
+            })
+            rock.forEach(item => {
+                item.style.display = "none";
+            })
+            rap.forEach(item => {
+                item.style.display = "none";
+            })
+            kpop.forEach(item => {
+                item.style.display = "none";
+            })
         }
     });
 });
@@ -125,6 +172,18 @@ music_5.forEach(item => {
             m5_active = true;
             resetGenreColors();
             item.style.backgroundColor = "gray";
+            pop.forEach(item => {
+                item.style.display = "none";
+            })
+            rock.forEach(item => {
+                item.style.display = "none";
+            })
+            rap.forEach(item => {
+                item.style.display = "none";
+            })
+            kpop.forEach(item => {
+                item.style.display = "flex";
+            })
         }
     });
 });
@@ -135,6 +194,18 @@ music_6.forEach(item => {
             m6_active = true;
             resetGenreColors();
             item.style.backgroundColor = "gray";
+            pop.forEach(item => {
+                item.style.display = "none";
+            })
+            rock.forEach(item => {
+                item.style.display = "none";
+            })
+            rap.forEach(item => {
+                item.style.display = "none";
+            })
+            kpop.forEach(item => {
+                item.style.display = "none";
+            })
         }
     });
 });
